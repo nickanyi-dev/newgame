@@ -49,7 +49,7 @@ function game(){
     console.log('Welcome')
     for(let i = 0; i < 5; i++){
         console.log(i);
-        const playerSelection = prompt("Pick one");
+        const playerSelection = getPlayerChoice();
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
     }

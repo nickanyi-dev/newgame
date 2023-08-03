@@ -1,9 +1,9 @@
-function getComputerChoice(computerChoice){
-    if(computerChoice <0.34){
-        computerChoice = "rock";
-    } else if(computerChoice <= 0.67){
-        computerChoice = "paper";
-    } else {
-        computerChoice = "scissors";
-    }
+const options = ["rock", "paper", "scissors"]
+
+
+function getComputerChoice(){
+    const choice = options[Math.floor(Math.random() * options.length)];
+   console.log(choice)
 }
+
+getComputerChoice();

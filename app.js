@@ -2,7 +2,6 @@ const options = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
   const choice = options[Math.floor(Math.random() * options.length)];
-  console.log(choice);
   return choice;
 }
 
@@ -30,6 +29,16 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+function game(){
+    console.log('Welcome')
+    for(let i = 0; i < 5; i++){
+        const playerSelection = "rock";
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+game();
 const playerSelection = "rock"
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
